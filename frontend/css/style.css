@@ -1,0 +1,108 @@
+/* css/styles.css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+            padding: 0;
+          
+             background-image: url("https://otrs.com/wp-content/uploads/ticketsystem_issue-tracking-1024x701.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+  background-position:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  #loginForm {
+    background: #ffffff;
+    padding: 2.5em 2em;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  input[type="email"],
+  input[type="password"],
+  select {
+    width: 100%;
+    padding: 0.75em 1em;
+    margin-bottom: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+  }
+  
+  input[type="email"]:focus,
+  input[type="password"]:focus,
+  select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+  }
+  
+  button {
+    width: 100%;
+    padding: 0.75em;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1em;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #message {
+    margin-top: 1.5em;
+    color: #e74c3c;
+    font-size: 0.9em;
+    text-align: center;
+  }
+  
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 2em;
+    }
+  
+    #loginForm {
+      padding: 2em 1.5em;
+    }
+  
+    input[type="email"],
+    input[type="password"],
+    select {
+      padding: 0.65em 0.9em;
+    }
+  
+    button {
+      padding: 0.65em;
+      font-size: 1em;
+    }
+  }
+  
